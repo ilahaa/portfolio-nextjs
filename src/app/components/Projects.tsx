@@ -1,6 +1,4 @@
 import React from 'react'
-import Hero from './Hero'
-import { article, section, span } from 'framer-motion/client'
 import { projects } from '@/contents/projects'
 import Image from 'next/image'
 import Link from 'next/link'
