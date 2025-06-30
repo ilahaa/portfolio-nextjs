@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     const { name, email, message } = await request.json();
 
     const data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>", // Or your verified domain
+      from: "Contact Form <onboarding@resend.dev>", 
       to: "hasanliilaha12@gmail.com", 
       subject: `New message from ${name}`,
       html: `
@@ -18,6 +18,7 @@ export async function POST(request: Request) {
         <p><strong>Message:</strong><br/>${message}</p>
       `,
     });
+    console.log(data);
 
     return NextResponse.json({ message: "Message sent successfully" }, { status: 200 });
   } catch (error) {
