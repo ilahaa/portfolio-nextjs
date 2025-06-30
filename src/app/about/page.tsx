@@ -1,20 +1,25 @@
+import Head from "next/head"
 import { FaCode } from "react-icons/fa"
 
 const About = () => {
   return (
+    <>
+                    <Head>
+        <title>My page title</title>
+      </Head>
     <div className="container max-w-7xl mx-auto py-20">
 
       <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
 
       {/* Bio Section */}
       <section className="mb-16">
-        <p className="text-lg text-secondary max-w-3xl mx-auto text-center">Bu texti deyisecem. cv-den copy</p>
+        <p className="text-lg text-secondary max-w-3xl mx-auto text-center">I am a passionate developer with a strong interest in both front-end and back-end technologies. Always eager to learn, actively seek opportunities to enhance my skills and stay updated with industry trends. My goal is to create efficient, user-friendly applications while collaborating with diverse teams. I am excited tocontribute to innovative projects in the future.</p>
       </section>
 
       {/* Skills section */}
       <section className="mb-16">
         <h2 className="section-title">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-center">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <FaCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
@@ -28,23 +33,10 @@ const About = () => {
 
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
             <FaCode className="h-8 w-8 text-primary mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Bunu deyis</h3>
+            <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-2">
-              <li>React /  Next.js</li>
-              <li>JavaScript</li>
-              <li>Tailwind Css</li>
-              <li>Html / Css</li>
-            </ul>
-          </div>
-
-          <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
-            <FaCode className="h-8 w-8 text-primary mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Bunu deyis</h3>
-            <ul className="text-secondary space-2">
-              <li>React /  Next.js</li>
-              <li>JavaScript</li>
-              <li>Tailwind Css</li>
-              <li>Html / Css</li>
+              <li>Java</li>
+              <li>Python</li>
             </ul>
           </div>
 
@@ -76,7 +68,7 @@ const About = () => {
 
       {/* Education Section */}
 
-            <section className="mb-16">
+      <section className="mb-16">
         <h2 className="section-title">Education</h2>
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md">
@@ -87,6 +79,7 @@ const About = () => {
 
       </section>
     </div>
+    </>
   )
 }
 
